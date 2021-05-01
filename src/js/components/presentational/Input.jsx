@@ -14,4 +14,5 @@ const Input = ({ label, text, type, id, value, handleChange }) => (
   </div>
 );
 
+
 export default Input;

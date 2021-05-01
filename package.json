@@ -6,8 +6,12 @@
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
     "autoprefixer": "^10.2.5",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.2",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
@@ -15,6 +19,7 @@
     "postcss-loader": "^5.2.0",
     "postcss-normalize": "^10.0.0",
     "postcss-preset-env": "^6.7.0",
+    "pre-commit": "^1.2.2",
     "style-loader": "^2.0.0",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
@@ -22,7 +27,8 @@
   },
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint --ext .js --ext .jsx src"
   },
   "repository": {
     "type": "git",
@@ -36,7 +42,13 @@
   },
   "homepage": "https://github.com/wangyong315/react-falsework#readme",
   "dependencies": {
+    "antd": "^4.15.4",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  }
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
