@@ -1,7 +1,9 @@
 import React from "react";
 
+// import styles from "./index.less";
+
 const Input = ({ label, text, type, id, value, handleChange }) => (
-  <div className="form-group">
+  <div className="inputWrap">
     <label htmlFor={label}>{text}</label>
     <input
       type={type}

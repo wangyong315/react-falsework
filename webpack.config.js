@@ -17,7 +17,15 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
-      }
+      },
+      // {
+      //   test: /\.less$/i,
+      //   loader: [
+      //     "style-loader",
+      //     "css-loader",
+      //     "less-loader",
+      //   ],
+      // },
     ]
   },
   plugins: [
